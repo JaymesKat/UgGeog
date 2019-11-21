@@ -27,6 +27,9 @@ class Subcounty extends Model
 
     /**
      * Get single subcounty: name, district, region, male population, female population, total population, land area, gender ratio
+     *
+     * @param $subcounty_name
+     * @return array
      */
     public static function get($subcounty_name)
     {
@@ -38,6 +41,9 @@ class Subcounty extends Model
 
     /**
      * Get all subcounties within district
+     *
+     * @param $district_name
+     * @return
      */
     public static function inDistrict($district_name)
     {

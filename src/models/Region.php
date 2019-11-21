@@ -26,6 +26,10 @@ class Region extends Model
 
     /**
      * Get details about a region and the districts therein
+     *
+     * @param $region_name
+     * @return array
+     *
      */
     public static function get($region_name)
     {

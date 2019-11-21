@@ -11,6 +11,8 @@ class District extends Model
 
     /**
      * Get all districts
+     *
+     * @return array
      */
     public static function list()
     {
@@ -26,6 +28,9 @@ class District extends Model
 
     /**
      * Get districts within a region
+     *
+     * @param $region_name
+     * @return array
      */
     public static function inRegion($region_name){
         $dbColumns = 'distinct district AS district_name,
@@ -44,6 +49,9 @@ class District extends Model
     /**
      * Get info for single district:
      * name, region, male population, female population, total population, gender ratio and array of subcounties
+     *
+     * @param $district_name
+     * @return
      */
     public static function get($district_name)
     {
