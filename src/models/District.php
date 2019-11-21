@@ -1,10 +1,10 @@
 <?php
 
-namespace App;
+namespace JaymesKat\UgGeog\Models;
 
 use Illuminate\Support\Facades\DB;
 use Illuminate\Database\Eloquent\Model;
-use App\Subcounty;
+use JaymesKat\UgGeog\Models\Subcounty;
 
 class District extends Model
 {

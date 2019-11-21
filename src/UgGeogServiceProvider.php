@@ -23,8 +23,7 @@ class UgGeogServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        // Load routes, migration files
-        $this->loadRoutesFrom(__DIR__ . '/routes.php');
+        // Load migration files
         $this->loadMigrationsFrom(__DIR__ . '/migrations');
 
         // Publish seeds
@@ -32,8 +31,5 @@ class UgGeogServiceProvider extends ServiceProvider
 
         // Publish raw data file
         $this->publishes([__DIR__ . '/../data' => $this->app->storagePath() . '/'], 'storage');
-
-        // Publish models
-        $this->publishes([__DIR__ . '/models' => $this->app->basePath() . '/app'], 'app');
     }
 }

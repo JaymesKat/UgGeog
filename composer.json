@@ -18,7 +18,8 @@
     "autoload": {
         "psr-4": {
             "App\\": "app/",
-            "JaymesKat\\UgGeog\\": "src"
+            "JaymesKat\\UgGeog\\": "src",
+            "JaymesKat\\UgGeog\\Models\\": "src/models"
         }
     },
     "extra": {
