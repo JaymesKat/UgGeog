@@ -83,28 +83,31 @@ Run migrations to provision tables in your database, this will also add seed dat
 Use models from package to get the records.
 
 Regions
-    ```php
+    
+```php
     use JaymesKat\UgGeog\Models\Region;
 
     $regionsArray = Region::list();
 
-    ```
+```
 
 Districts
-    ```php
+
+```php
     use JaymesKat\UgGeog\Models\District;
 
     $districtsArray = District::list();
 
-    ```
+```
 
 Subcounties
-    ```php
+    
+```php
     use JaymesKat\UgGeog\Models\Subcounty;
 
     $subcountiesArray = Subcounty::list();
+```
 
-    ```
 ### Getting Specific Records
 
 Use the package models to retrieve specific region, district or subcounty information.
@@ -120,8 +123,10 @@ $district = District::get('Kampala');
 
 $subcounty = Subcounty::get('Bihanga');
 
+// Get all districts within a region
 $districtsWithinRegion = District::inRegion('Western');
 
+// Get all subcounties within a district
 $subcountiesWithinDistrict = Subcounty::inDistrict('Jinja');
 
 ```
