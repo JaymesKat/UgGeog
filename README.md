@@ -53,7 +53,7 @@ Add the package to your application service providers in `config/app.php` file.
     ...
 
     /**
-     * Third Party Service Providers...
+     * Package Service Providers...
      */
     JaymesKat\UgGeog\UgGeogServiceProvider::class,
 
@@ -73,10 +73,14 @@ Ensure all package classes are autoloaded
 
 ### Run Migrations
 
+Set up seeding by adding the code below in the body of the `run` function inside the `DatabaseSeeder.php` file located within the `database/seeds` folder
+
+    $this->call(RegionsTableSeeder::class);
+
+
 Run migrations to provision tables in your database, this will also add seed data to tables.
 
     php artisan migrate --seed
-
 
 ---
 
