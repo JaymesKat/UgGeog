@@ -12,4 +12,14 @@
             <directory suffix=".php">tests/unit/</directory>
         </testsuite>
     </testsuites>
+    <filter>
+        <whitelist processUncoveredFilesFromWhitelist="true">
+            <directory suffix=".php">src</directory>
+            <exclude>
+                <file>src/UgGeogServiceProvider.php</file>
+                <file>src/seeds/RegionsTableSeeder.php</file>
+                <file>src/migrations/*</file>
+            </exclude>
+        </whitelist>
+    </filter>
 </phpunit>
