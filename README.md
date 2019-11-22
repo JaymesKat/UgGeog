@@ -1,4 +1,5 @@
 [![CircleCI](https://circleci.com/gh/JaymesKat/UgGeog.svg?style=svg)](https://circleci.com/gh/JaymesKat/UgGeog)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/608ad4e2cb9add240444/test_coverage)](https://codeclimate.com/github/JaymesKat/UgGeog/test_coverage)
 
 # UgGeog
 This is a laravel package you can use to retrieve population data for Uganda's regions, districts, subcounties and population according to the [2014 census data](http://catalog.data.ug/dataset/2014-census-data/resource/a7aff54f-a3e1-408c-94b4-cb28dde3c7dd)
