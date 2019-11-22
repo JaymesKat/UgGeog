@@ -3,7 +3,7 @@ This is a laravel package you can use to retrieve data for Uganda's regions, dis
 
 
 
-## Setup and Configuration
+## Table of Contents
 
 - [Requirements](#requirements)
 - [Installation](#installation)
@@ -82,7 +82,7 @@ Run migrations to provision tables in your database, this will also add seed dat
 
 Use models from package to get the records.
 
-Regions
+#### Regions
     
 ```php
     use JaymesKat\UgGeog\Models\Region;
@@ -91,7 +91,7 @@ Regions
 
 ```
 
-Districts
+#### Districts
 
 ```php
     use JaymesKat\UgGeog\Models\District;
@@ -100,7 +100,7 @@ Districts
 
 ```
 
-Subcounties
+#### Subcounties
     
 ```php
     use JaymesKat\UgGeog\Models\Subcounty;

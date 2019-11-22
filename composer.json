@@ -1,5 +1,5 @@
 {
-    "name": "jaymeskat/UgGeog",
+    "name": "jaymeskat/ug-geog",
     "description": "Laravel package to access demographic data on Uganda's regions and districts",
     "version": "1.0.0",
     "keywords": [
