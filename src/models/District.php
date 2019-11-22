@@ -68,7 +68,7 @@ class District extends Model
                     ROUND(number_of_males*1.0/number_of_females, 2) AS male_to_female_ratio,
                     count(subcounty) as number_of_subcounties';
 
-        $resultsArr = DB::table('uganda_regions')->select(DB::raw($columns))->where('district', 'like', trim($district_name))->groupBy(trim($district_name))->get()->all();
+        $resultsArr['info'] = DB::table('uganda_regions')->select(DB::raw($columns))->where('district', 'like', trim($district_name))->groupBy(trim($district_name))->get()->all()[0];
         $resultsArr['subcounties'] = Subcounty::inDistrict(trim($district_name));
         return $resultsArr;
     }

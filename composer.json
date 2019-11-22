@@ -22,11 +22,20 @@
             "JaymesKat\\UgGeog\\Models\\": "src/models"
         }
     },
+    "autoload-dev": {
+        "psr-4": {
+            "JaymesKat\\UgGeog\\Tests\\": "tests"
+        }
+    },
     "extra": {
         "laravel": {
             "providers": [
                 "JaymesKat\\UgGeog\\UgGeogServiceProvider"
             ]
         }
+    },
+    "require-dev": {
+        "orchestra/testbench": "^5.0@dev",
+        "phpunit/phpunit": "^8.5@dev"
     }
 }

@@ -36,7 +36,7 @@ class Subcounty extends Model
         if (!DB::table('uganda_regions')->select(DB::raw('subcounty'))->get()->contains('subcounty', trim($subcounty_name))) {
             return ['error' => 'subcounty not found'];
         }
-        return DB::table('uganda_regions')->select(DB::raw(self::$dbColumns))->where('subcounty', 'LIKE', trim($subcounty_name))->get()->all();
+        return DB::table('uganda_regions')->select(DB::raw(self::$dbColumns))->where('subcounty', 'LIKE', trim($subcounty_name))->get()->all()[0];
     }
 
     /**

@@ -43,7 +43,7 @@ class Region extends Model
         if (!DB::table('uganda_regions')->select(DB::raw('distinct region'))->get()->contains('region', trim($region_name))) {
             return ['error' => 'region not found'];
         }
-        $resultsArr = DB::table('uganda_regions')->select(DB::raw($columns))->where('region', 'LIKE', trim($region_name))->groupBy('region')->get()->all();
+        $resultsArr['info'] = DB::table('uganda_regions')->select(DB::raw($columns))->where('region', 'LIKE', trim($region_name))->groupBy('region')->get()->all()[0];
         $resultsArr['districts'] = District::inRegion(trim($region_name));
         return $resultsArr;
     }
