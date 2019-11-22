@@ -17,6 +17,7 @@
     ],
     "minimum-stability": "dev",
     "require": {},
+    "license": "MIT",
     "autoload": {
         "psr-4": {
             "App\\": "app/",
